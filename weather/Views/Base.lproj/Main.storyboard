@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgImageSet" translatesAutoresizingMaskIntoConstraints="NO" id="AcW-iN-LI5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="EcB-k6-goQ" appends="YES" id="LZ0-oS-Cxr"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_partly_cloudy_day" translatesAutoresizingMaskIntoConstraints="NO" id="jBg-VS-DDn">
+                                <rect key="frame" x="253" y="131" width="132.66666666666663" height="107.66666666666669"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15º c" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw3-R2-bpe" userLabel="LblTemp">
+                                <rect key="frame" x="137" y="258.66666666666669" width="248.66666666666663" height="116.33333333333331"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="90"/>
+                                <color key="textColor" red="0.10980392156862745" green="0.29411764705882354" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vietnam" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0O-9E-hdw" userLabel="LblLocation">
+                                <rect key="frame" x="220" y="405" width="165.66666666666663" height="24.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="20"/>
+                                <color key="textColor" red="0.10980392156862745" green="0.29411764705882354" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="VD: hanoi" textAlignment="natural" minimumFontSize="17" background="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="DIW-cJ-Tvv" userLabel="TfWeatherLocation">
+                                <rect key="frame" x="28.666666666666657" y="50" width="357" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DIW-cJ-Tvv" secondAttribute="height" multiplier="7:1" id="7Cb-65-rcO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onEdittingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="zLf-pF-Y9O"/>
+                                </connections>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8ct-yJ-jKL" userLabel="TblListCountry">
+                                <rect key="frame" x="28.666666666666657" y="101.00000000000003" width="357" height="392.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8ct-yJ-jKL" secondAttribute="height" multiplier="100:110" id="pdN-bj-eZk"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" id="bmc-1c-uFm" customClass="CountryCell" customModule="Weather" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="357" height="43.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bmc-1c-uFm" id="mZX-yr-BxY">
+                                            <rect key="frame" x="0.0" y="0.0" width="357" height="43.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zit-Tf-psR">
+                                                    <rect key="frame" x="40" y="10.999999999999998" width="42" height="21.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Zit-Tf-psR" secondAttribute="bottom" constant="11" id="Lu6-ae-nem"/>
+                                                <constraint firstItem="Zit-Tf-psR" firstAttribute="leading" secondItem="mZX-yr-BxY" secondAttribute="leading" constant="40" id="P7R-Zf-NZp"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zit-Tf-psR" secondAttribute="trailing" constant="40" id="RZe-Wi-Mpe"/>
+                                                <constraint firstItem="Zit-Tf-psR" firstAttribute="top" secondItem="mZX-yr-BxY" secondAttribute="top" constant="11" id="W65-L4-OGf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblNameCountry" destination="Zit-Tf-psR" id="fv4-XL-DKy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Qw3-R2-bpe" firstAttribute="top" secondItem="jBg-VS-DDn" secondAttribute="bottom" constant="20" id="0fH-LX-0vs"/>
+                            <constraint firstItem="K0O-9E-hdw" firstAttribute="trailing" secondItem="Qw3-R2-bpe" secondAttribute="trailing" id="2yx-nD-ZIb"/>
+                            <constraint firstItem="K0O-9E-hdw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="6sF-vy-FqI"/>
+                            <constraint firstItem="DIW-cJ-Tvv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.862319" id="FfI-BW-NYc"/>
+                            <constraint firstItem="jBg-VS-DDn" firstAttribute="trailing" secondItem="DIW-cJ-Tvv" secondAttribute="trailing" id="Hte-II-xiq"/>
+                            <constraint firstItem="DIW-cJ-Tvv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KD2-Ze-W5o"/>
+                            <constraint firstItem="K0O-9E-hdw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.027" id="NOp-K6-ygI"/>
+                            <constraint firstItem="8ct-yJ-jKL" firstAttribute="centerX" secondItem="DIW-cJ-Tvv" secondAttribute="centerX" id="Rcw-X3-fCf"/>
+                            <constraint firstItem="DIW-cJ-Tvv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="TT4-V4-XRV"/>
+                            <constraint firstItem="Qw3-R2-bpe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="ZW4-7r-IjN"/>
+                            <constraint firstItem="Qw3-R2-bpe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.13" id="ZeO-US-oP2"/>
+                            <constraint firstItem="K0O-9E-hdw" firstAttribute="top" secondItem="Qw3-R2-bpe" secondAttribute="bottom" constant="30.000000000000057" id="b7H-R9-sQx"/>
+                            <constraint firstItem="8ct-yJ-jKL" firstAttribute="top" secondItem="DIW-cJ-Tvv" secondAttribute="bottom" id="f5u-zf-Jar"/>
+                            <constraint firstItem="8ct-yJ-jKL" firstAttribute="width" secondItem="DIW-cJ-Tvv" secondAttribute="width" id="gny-nY-RfY"/>
+                            <constraint firstItem="Qw3-R2-bpe" firstAttribute="trailing" secondItem="jBg-VS-DDn" secondAttribute="trailing" id="hAy-2d-ShI"/>
+                            <constraint firstItem="jBg-VS-DDn" firstAttribute="top" secondItem="DIW-cJ-Tvv" secondAttribute="bottom" constant="30" id="iVr-OQ-aoF"/>
+                            <constraint firstItem="jBg-VS-DDn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.12" id="jc6-Dr-vho"/>
+                            <constraint firstItem="jBg-VS-DDn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.320451" id="trO-1l-lpm"/>
+                            <constraint firstItem="K0O-9E-hdw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="yM4-ja-iFJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgWeather" destination="jBg-VS-DDn" id="laf-It-cTy"/>
+                        <outlet property="lblLocation" destination="K0O-9E-hdw" id="cVK-Ap-ATJ"/>
+                        <outlet property="lblTemp" destination="Qw3-R2-bpe" id="2Nj-Gh-BEV"/>
+                        <outlet property="tblListCountry" destination="8ct-yJ-jKL" id="GMc-Yh-XRI"/>
+                        <outlet property="txtWeatherLocation" destination="DIW-cJ-Tvv" id="Coj-Er-coc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="EcB-k6-goQ" userLabel="onScreenIsTapped">
+                    <connections>
+                        <action selector="onScreenIsTapped:" destination="BYZ-38-t0r" id="Zs0-2b-QP2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-55.072463768115945" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgImageSet" width="1000" height="1778"/>
+        <image name="ic_partly_cloudy_day" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="ic_search" width="314.33334350585938" height="39.666667938232422"/>
+    </resources>
+</document>

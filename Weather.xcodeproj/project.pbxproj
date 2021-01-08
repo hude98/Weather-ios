@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B21E741D246EBCBD003F80E7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E741C246EBCBD003F80E7 /* UIViewControllerExtension.swift */; };
+		B22A2611242F94C50086EF68 /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22A2610242F94C50086EF68 /* WeatherForecast.swift */; };
+		B22A2613242F94E80086EF68 /* WeatherForecastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22A2612242F94E80086EF68 /* WeatherForecastManager.swift */; };
+		B24792492449740500E51D69 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24792482449740500E51D69 /* UITextFieldExtension.swift */; };
+		B24F7C43242E0D7C00C3239E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24F7C42242E0D7C00C3239E /* AppDelegate.swift */; };
+		B24F7C45242E0D7C00C3239E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24F7C44242E0D7C00C3239E /* SceneDelegate.swift */; };
+		B24F7C47242E0D7C00C3239E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24F7C46242E0D7C00C3239E /* ViewController.swift */; };
+		B24F7C4A242E0D7C00C3239E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24F7C48242E0D7C00C3239E /* Main.storyboard */; };
+		B24F7C4C242E0D7E00C3239E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B24F7C4B242E0D7E00C3239E /* Assets.xcassets */; };
+		B24F7C4F242E0D7E00C3239E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24F7C4D242E0D7E00C3239E /* LaunchScreen.storyboard */; };
+		B25247DB24750470003F58E9 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25247DA24750470003F58E9 /* CountryCell.swift */; };
+		B282C7A724485AD000F97B35 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C79924485AC500F97B35 /* Raleway-Black.ttf */; };
+		B282C7A824485AD000F97B35 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C79A24485AC500F97B35 /* Raleway-BlackItalic.ttf */; };
+		B282C7A924485AD000F97B35 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C7A624485AC600F97B35 /* Raleway-Bold.ttf */; };
+		B282C7AA24485AD000F97B35 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C79F24485AC500F97B35 /* Raleway-BoldItalic.ttf */; };
+		B282C7AB24485AD000F97B35 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C79C24485AC500F97B35 /* Raleway-ExtraBold.ttf */; };
+		B282C7AC24485AD000F97B35 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C79E24485AC500F97B35 /* Raleway-ExtraBoldItalic.ttf */; };
+		B282C7AD24485AD000F97B35 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C79B24485AC500F97B35 /* Raleway-ExtraLight.ttf */; };
+		B282C7AE24485AD000F97B35 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C7A024485AC500F97B35 /* Raleway-ExtraLightItalic.ttf */; };
+		B282C7AF24485AD000F97B35 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C79D24485AC500F97B35 /* Raleway-Italic.ttf */; };
+		B282C7B024485AD000F97B35 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C7A324485AC500F97B35 /* Raleway-Light.ttf */; };
+		B282C7B124485AD000F97B35 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C79524485AC500F97B35 /* Raleway-LightItalic.ttf */; };
+		B282C7B224485AD000F97B35 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C79824485AC500F97B35 /* Raleway-Medium.ttf */; };
+		B282C7B324485AD000F97B35 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C79624485AC500F97B35 /* Raleway-MediumItalic.ttf */; };
+		B282C7B424485AD000F97B35 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C7A224485AC500F97B35 /* Raleway-Regular.ttf */; };
+		B282C7B524485AD000F97B35 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C7A424485AC500F97B35 /* Raleway-SemiBold.ttf */; };
+		B282C7B624485AD000F97B35 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C79724485AC500F97B35 /* Raleway-SemiBoldItalic.ttf */; };
+		B282C7B724485AD000F97B35 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C7A524485AC600F97B35 /* Raleway-Thin.ttf */; };
+		B282C7B824485AD000F97B35 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B282C7A124485AC500F97B35 /* Raleway-ThinItalic.ttf */; };
+		B2A0854524358AA700BDD955 /* WeatherForcecastDc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A0854424358AA700BDD955 /* WeatherForcecastDc.swift */; };
+		B2A085482435E43B00BDD955 /* NSDictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A085472435E43B00BDD955 /* NSDictionaryExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B21E741C246EBCBD003F80E7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		B22A2610242F94C50086EF68 /* WeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
+		B22A2612242F94E80086EF68 /* WeatherForecastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastManager.swift; sourceTree = "<group>"; };
+		B24792482449740500E51D69 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		B24F7C3F242E0D7C00C3239E /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24F7C42242E0D7C00C3239E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B24F7C44242E0D7C00C3239E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B24F7C46242E0D7C00C3239E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B24F7C49242E0D7C00C3239E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B24F7C4B242E0D7E00C3239E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B24F7C4E242E0D7E00C3239E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B24F7C50242E0D7E00C3239E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B25247DA24750470003F58E9 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		B282C79524485AC500F97B35 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-LightItalic.ttf"; path = "Raleway/Raleway-LightItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C79624485AC500F97B35 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-MediumItalic.ttf"; path = "Raleway/Raleway-MediumItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C79724485AC500F97B35 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBoldItalic.ttf"; path = "Raleway/Raleway-SemiBoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C79824485AC500F97B35 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Medium.ttf"; path = "Raleway/Raleway-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C79924485AC500F97B35 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Black.ttf"; path = "Raleway/Raleway-Black.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C79A24485AC500F97B35 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-BlackItalic.ttf"; path = "Raleway/Raleway-BlackItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C79B24485AC500F97B35 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraLight.ttf"; path = "Raleway/Raleway-ExtraLight.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C79C24485AC500F97B35 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraBold.ttf"; path = "Raleway/Raleway-ExtraBold.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C79D24485AC500F97B35 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Italic.ttf"; path = "Raleway/Raleway-Italic.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C79E24485AC500F97B35 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraBoldItalic.ttf"; path = "Raleway/Raleway-ExtraBoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C79F24485AC500F97B35 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-BoldItalic.ttf"; path = "Raleway/Raleway-BoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C7A024485AC500F97B35 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraLightItalic.ttf"; path = "Raleway/Raleway-ExtraLightItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C7A124485AC500F97B35 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ThinItalic.ttf"; path = "Raleway/Raleway-ThinItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C7A224485AC500F97B35 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "Raleway/Raleway-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C7A324485AC500F97B35 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Light.ttf"; path = "Raleway/Raleway-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C7A424485AC500F97B35 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBold.ttf"; path = "Raleway/Raleway-SemiBold.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C7A524485AC600F97B35 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Thin.ttf"; path = "Raleway/Raleway-Thin.ttf"; sourceTree = SOURCE_ROOT; };
+		B282C7A624485AC600F97B35 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Bold.ttf"; path = "Raleway/Raleway-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		B2A0854424358AA700BDD955 /* WeatherForcecastDc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForcecastDc.swift; sourceTree = "<group>"; };
+		B2A085472435E43B00BDD955 /* NSDictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDictionaryExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B24F7C3C242E0D7C00C3239E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B24F7C36242E0D7C00C3239E = {
+			isa = PBXGroup;
+			children = (
+				B24F7C41242E0D7C00C3239E /* weather */,
+				B24F7C40242E0D7C00C3239E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B24F7C40242E0D7C00C3239E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B24F7C3F242E0D7C00C3239E /* Weather.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B24F7C41242E0D7C00C3239E /* weather */ = {
+			isa = PBXGroup;
+			children = (
+				B282C79424485AA900F97B35 /* Fonts */,
+				B2A085462435E42100BDD955 /* Extensions */,
+				B24F7C58242E0DAA00C3239E /* Models */,
+				B24F7C57242E0D9D00C3239E /* Views */,
+				B24F7C56242E0D9500C3239E /* Controllers */,
+				B24F7C42242E0D7C00C3239E /* AppDelegate.swift */,
+				B24F7C44242E0D7C00C3239E /* SceneDelegate.swift */,
+				B24F7C4B242E0D7E00C3239E /* Assets.xcassets */,
+				B24F7C4D242E0D7E00C3239E /* LaunchScreen.storyboard */,
+				B24F7C50242E0D7E00C3239E /* Info.plist */,
+			);
+			path = weather;
+			sourceTree = "<group>";
+		};
+		B24F7C56242E0D9500C3239E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B24F7C46242E0D7C00C3239E /* ViewController.swift */,
+				B22A2612242F94E80086EF68 /* WeatherForecastManager.swift */,
+				B25247DA24750470003F58E9 /* CountryCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B24F7C57242E0D9D00C3239E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B24F7C48242E0D7C00C3239E /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B24F7C58242E0DAA00C3239E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B22A2610242F94C50086EF68 /* WeatherForecast.swift */,
+				B2A0854424358AA700BDD955 /* WeatherForcecastDc.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B282C79424485AA900F97B35 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B282C79924485AC500F97B35 /* Raleway-Black.ttf */,
+				B282C79A24485AC500F97B35 /* Raleway-BlackItalic.ttf */,
+				B282C7A624485AC600F97B35 /* Raleway-Bold.ttf */,
+				B282C79F24485AC500F97B35 /* Raleway-BoldItalic.ttf */,
+				B282C79C24485AC500F97B35 /* Raleway-ExtraBold.ttf */,
+				B282C79E24485AC500F97B35 /* Raleway-ExtraBoldItalic.ttf */,
+				B282C79B24485AC500F97B35 /* Raleway-ExtraLight.ttf */,
+				B282C7A024485AC500F97B35 /* Raleway-ExtraLightItalic.ttf */,
+				B282C79D24485AC500F97B35 /* Raleway-Italic.ttf */,
+				B282C7A324485AC500F97B35 /* Raleway-Light.ttf */,
+				B282C79524485AC500F97B35 /* Raleway-LightItalic.ttf */,
+				B282C79824485AC500F97B35 /* Raleway-Medium.ttf */,
+				B282C79624485AC500F97B35 /* Raleway-MediumItalic.ttf */,
+				B282C7A224485AC500F97B35 /* Raleway-Regular.ttf */,
+				B282C7A424485AC500F97B35 /* Raleway-SemiBold.ttf */,
+				B282C79724485AC500F97B35 /* Raleway-SemiBoldItalic.ttf */,
+				B282C7A524485AC600F97B35 /* Raleway-Thin.ttf */,
+				B282C7A124485AC500F97B35 /* Raleway-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B2A085462435E42100BDD955 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2A085472435E43B00BDD955 /* NSDictionaryExtension.swift */,
+				B24792482449740500E51D69 /* UITextFieldExtension.swift */,
+				B21E741C246EBCBD003F80E7 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B24F7C3E242E0D7C00C3239E /* Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24F7C53242E0D7E00C3239E /* Build configuration list for PBXNativeTarget "Weather" */;
+			buildPhases = (
+				B24F7C3B242E0D7C00C3239E /* Sources */,
+				B24F7C3C242E0D7C00C3239E /* Frameworks */,
+				B24F7C3D242E0D7C00C3239E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Weather;
+			productName = weather;
+			productReference = B24F7C3F242E0D7C00C3239E /* Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B24F7C37242E0D7C00C3239E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = HungCorporation;
+				TargetAttributes = {
+					B24F7C3E242E0D7C00C3239E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B24F7C3A242E0D7C00C3239E /* Build configuration list for PBXProject "Weather" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B24F7C36242E0D7C00C3239E;
+			productRefGroup = B24F7C40242E0D7C00C3239E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B24F7C3E242E0D7C00C3239E /* Weather */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B24F7C3D242E0D7C00C3239E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B282C7AB24485AD000F97B35 /* Raleway-ExtraBold.ttf in Resources */,
+				B282C7B624485AD000F97B35 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				B282C7A724485AD000F97B35 /* Raleway-Black.ttf in Resources */,
+				B282C7B424485AD000F97B35 /* Raleway-Regular.ttf in Resources */,
+				B282C7AE24485AD000F97B35 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				B282C7B724485AD000F97B35 /* Raleway-Thin.ttf in Resources */,
+				B282C7B124485AD000F97B35 /* Raleway-LightItalic.ttf in Resources */,
+				B282C7AD24485AD000F97B35 /* Raleway-ExtraLight.ttf in Resources */,
+				B282C7A924485AD000F97B35 /* Raleway-Bold.ttf in Resources */,
+				B24F7C4F242E0D7E00C3239E /* LaunchScreen.storyboard in Resources */,
+				B282C7B224485AD000F97B35 /* Raleway-Medium.ttf in Resources */,
+				B282C7B824485AD000F97B35 /* Raleway-ThinItalic.ttf in Resources */,
+				B282C7B524485AD000F97B35 /* Raleway-SemiBold.ttf in Resources */,
+				B282C7AA24485AD000F97B35 /* Raleway-BoldItalic.ttf in Resources */,
+				B24F7C4C242E0D7E00C3239E /* Assets.xcassets in Resources */,
+				B282C7A824485AD000F97B35 /* Raleway-BlackItalic.ttf in Resources */,
+				B282C7B024485AD000F97B35 /* Raleway-Light.ttf in Resources */,
+				B24F7C4A242E0D7C00C3239E /* Main.storyboard in Resources */,
+				B282C7B324485AD000F97B35 /* Raleway-MediumItalic.ttf in Resources */,
+				B282C7AF24485AD000F97B35 /* Raleway-Italic.ttf in Resources */,
+				B282C7AC24485AD000F97B35 /* Raleway-ExtraBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B24F7C3B242E0D7C00C3239E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2A0854524358AA700BDD955 /* WeatherForcecastDc.swift in Sources */,
+				B24792492449740500E51D69 /* UITextFieldExtension.swift in Sources */,
+				B25247DB24750470003F58E9 /* CountryCell.swift in Sources */,
+				B21E741D246EBCBD003F80E7 /* UIViewControllerExtension.swift in Sources */,
+				B24F7C47242E0D7C00C3239E /* ViewController.swift in Sources */,
+				B2A085482435E43B00BDD955 /* NSDictionaryExtension.swift in Sources */,
+				B24F7C43242E0D7C00C3239E /* AppDelegate.swift in Sources */,
+				B22A2613242F94E80086EF68 /* WeatherForecastManager.swift in Sources */,
+				B24F7C45242E0D7C00C3239E /* SceneDelegate.swift in Sources */,
+				B22A2611242F94C50086EF68 /* WeatherForecast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B24F7C48242E0D7C00C3239E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B24F7C49242E0D7C00C3239E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B24F7C4D242E0D7E00C3239E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B24F7C4E242E0D7E00C3239E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B24F7C51242E0D7E00C3239E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B24F7C52242E0D7E00C3239E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B24F7C54242E0D7E00C3239E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CSG3G37D9;
+				INFOPLIST_FILE = weather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Weather.Identifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B24F7C55242E0D7E00C3239E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CSG3G37D9;
+				INFOPLIST_FILE = weather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Weather.Identifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B24F7C3A242E0D7C00C3239E /* Build configuration list for PBXProject "Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24F7C51242E0D7E00C3239E /* Debug */,
+				B24F7C52242E0D7E00C3239E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24F7C53242E0D7E00C3239E /* Build configuration list for PBXNativeTarget "Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24F7C54242E0D7E00C3239E /* Debug */,
+				B24F7C55242E0D7E00C3239E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B24F7C37242E0D7C00C3239E /* Project object */;
+}

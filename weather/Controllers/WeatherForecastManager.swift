@@ -22,8 +22,14 @@ class WeatherForecastManager{
     public func fetchData(delegate : WeatherDelegate, text : String){
         textSearch = text
         DispatchQueue.global().async {
-            let request = URLRequest(url: URL(string: "http://api.openweathermap.org/data/2.5/weather?q=\( self.textSearch)&units=metric&appid=d7e833c8105f1c1cb33eb8dfe19615ac")!)
-            print(request)
+            let url = "http://api.openweathermap.org/data/2.5/weather?q=\( self.textSearch)&units=metric&appid=d7e833c8105f1c1cb33eb8dfe19615ac"
+            
+            let encodedUrl = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+            
+            let request = URLRequest(url: URL(string: encodedUrl)!)
+            
+            print("\(request) \n")
+            
             let task = URLSession.shared.dataTask(with: request, completionHandler:
             { (data, response, error) in
                 let json = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary

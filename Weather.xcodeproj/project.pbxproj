@@ -10,7 +10,7 @@
 		B21E741D246EBCBD003F80E7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E741C246EBCBD003F80E7 /* UIViewControllerExtension.swift */; };
 		B22A2611242F94C50086EF68 /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22A2610242F94C50086EF68 /* WeatherForecast.swift */; };
 		B22A2613242F94E80086EF68 /* WeatherForecastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22A2612242F94E80086EF68 /* WeatherForecastManager.swift */; };
-		B24792492449740500E51D69 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24792482449740500E51D69 /* UITextFieldExtension.swift */; };
+		B23DB3E125CAFD63004B26FE /* city_names.txt in Resources */ = {isa = PBXBuildFile; fileRef = B23DB3E025CAFD63004B26FE /* city_names.txt */; };
 		B24F7C43242E0D7C00C3239E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24F7C42242E0D7C00C3239E /* AppDelegate.swift */; };
 		B24F7C45242E0D7C00C3239E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24F7C44242E0D7C00C3239E /* SceneDelegate.swift */; };
 		B24F7C47242E0D7C00C3239E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24F7C46242E0D7C00C3239E /* ViewController.swift */; };
@@ -44,7 +44,7 @@
 		B21E741C246EBCBD003F80E7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		B22A2610242F94C50086EF68 /* WeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
 		B22A2612242F94E80086EF68 /* WeatherForecastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastManager.swift; sourceTree = "<group>"; };
-		B24792482449740500E51D69 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		B23DB3E025CAFD63004B26FE /* city_names.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = city_names.txt; sourceTree = "<group>"; };
 		B24F7C3F242E0D7C00C3239E /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24F7C42242E0D7C00C3239E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B24F7C44242E0D7C00C3239E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +116,7 @@
 				B24F7C4B242E0D7E00C3239E /* Assets.xcassets */,
 				B24F7C4D242E0D7E00C3239E /* LaunchScreen.storyboard */,
 				B24F7C50242E0D7E00C3239E /* Info.plist */,
+				B23DB3E025CAFD63004B26FE /* city_names.txt */,
 			);
 			path = weather;
 			sourceTree = "<group>";
@@ -176,7 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				B2A085472435E43B00BDD955 /* NSDictionaryExtension.swift */,
-				B24792482449740500E51D69 /* UITextFieldExtension.swift */,
 				B21E741C246EBCBD003F80E7 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
@@ -260,6 +260,7 @@
 				B24F7C4A242E0D7C00C3239E /* Main.storyboard in Resources */,
 				B282C7B324485AD000F97B35 /* Raleway-MediumItalic.ttf in Resources */,
 				B282C7AF24485AD000F97B35 /* Raleway-Italic.ttf in Resources */,
+				B23DB3E125CAFD63004B26FE /* city_names.txt in Resources */,
 				B282C7AC24485AD000F97B35 /* Raleway-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +273,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A0854524358AA700BDD955 /* WeatherForcecastDc.swift in Sources */,
-				B24792492449740500E51D69 /* UITextFieldExtension.swift in Sources */,
 				B25247DB24750470003F58E9 /* CountryCell.swift in Sources */,
 				B21E741D246EBCBD003F80E7 /* UIViewControllerExtension.swift in Sources */,
 				B24F7C47242E0D7C00C3239E /* ViewController.swift in Sources */,
@@ -424,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CSG3G37D9;
 				INFOPLIST_FILE = weather/Info.plist;
@@ -433,6 +434,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Weather.Identifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CSG3G37D9;
 				INFOPLIST_FILE = weather/Info.plist;
@@ -451,6 +454,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Weather.Identifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

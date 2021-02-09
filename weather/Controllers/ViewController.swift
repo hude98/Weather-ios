@@ -61,11 +61,6 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         tblListCountry.isHidden = true
     }
     
-
-//    @IBAction func onEdittingChanged(_ sender: Any) {
-//
-//
-//    }
     
     
     private func getTransparentTableViewCell(tableView : UITableView, tableViewCell : UITableViewCell){
@@ -101,7 +96,6 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
             tblListCountry.isHidden = true
         }
         tblListCountry.reloadData()
-        
     }
     
     
@@ -145,32 +139,16 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     
     
     func getNameCountries(){
-        countries.append("Afghanistan")
-        countries.append("Algeria")
-        countries.append("Bangladesh")
-        countries.append("Belgium")
-        countries.append("Cambodia")
-        countries.append("Cameroon")
-        countries.append("China")
-        countries.append("Denmark")
-        countries.append("Dominica")
-        countries.append("Ecuador")
-        countries.append("Finland")
-        countries.append("France")
-        countries.append("Germany")
-        countries.append("Iceland")
-        countries.append("Iran")
-        countries.append("Kazakhstan")
-        countries.append("Libya")
-        countries.append("Malaysia")
-        countries.append("Nigeria")
-        countries.append("Panama")
-        countries.append("Qatar")
-        countries.append("Sri Lanka")
-        countries.append("Taiwan")
-        countries.append("United States")
-        countries.append("Vietnam")
+        do {
+            if let path = Bundle.main.path(forResource: "city_names", ofType: "txt"){
+                let data = try String(contentsOfFile:path, encoding: String.Encoding.utf8)
+                countries = data.components(separatedBy: "\n")
+            }
+        } catch let err as NSError {
+            print("Error when get name countries : \(err)")
+        }
     }
+    
     
     func addCountriesToOriginal() {
         for country in countries{

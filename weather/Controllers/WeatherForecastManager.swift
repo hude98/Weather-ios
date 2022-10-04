@@ -15,14 +15,12 @@ protocol WeatherDelegate {
 
 class WeatherForecastManager{
     private var weatherForecast = WeatherForecast()
-    private var textSearch : String = ""
     var delegate : WeatherDelegate?
     
     
     public func fetchData(delegate : WeatherDelegate, text : String){
-        textSearch = text
         DispatchQueue.global().async {
-            let url = "http://api.openweathermap.org/data/2.5/weather?q=\( self.textSearch)&units=metric&appid=d7e833c8105f1c1cb33eb8dfe19615ac"
+            let url = "http://api.openweathermap.org/data/2.5/weather?q=\( text)&units=metric&appid=d7e833c8105f1c1cb33eb8dfe19615ac"
             
             let encodedUrl = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
             

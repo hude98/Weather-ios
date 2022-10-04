@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,9 +25,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgImageSet" translatesAutoresizingMaskIntoConstraints="NO" id="AcW-iN-LI5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImageSet" translatesAutoresizingMaskIntoConstraints="NO" id="AcW-iN-LI5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="EcB-k6-goQ" appends="YES" id="LZ0-oS-Cxr"/>
@@ -48,7 +47,7 @@
                                 <color key="textColor" red="0.10980392156862745" green="0.29411764705882354" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="VD: hanoi" textAlignment="natural" minimumFontSize="17" background="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="DIW-cJ-Tvv" userLabel="TfWeatherLocation">
+                            <textField opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="VD: hanoi" textAlignment="natural" minimumFontSize="17" background="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="DIW-cJ-Tvv" userLabel="TfWeatherLocation">
                                 <rect key="frame" x="28.666666666666657" y="50" width="357" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DIW-cJ-Tvv" secondAttribute="height" multiplier="7:1" id="7Cb-65-rcO"/>
@@ -63,7 +62,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" id="bmc-1c-uFm" customClass="CountryCell" customModule="Weather" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="357" height="43"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="357" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bmc-1c-uFm" id="mZX-yr-BxY">
                                             <rect key="frame" x="0.0" y="0.0" width="357" height="43"/>
@@ -97,10 +96,12 @@
                         <constraints>
                             <constraint firstItem="Qw3-R2-bpe" firstAttribute="top" secondItem="jBg-VS-DDn" secondAttribute="bottom" constant="20" id="0fH-LX-0vs"/>
                             <constraint firstItem="K0O-9E-hdw" firstAttribute="trailing" secondItem="Qw3-R2-bpe" secondAttribute="trailing" id="2yx-nD-ZIb"/>
+                            <constraint firstAttribute="top" secondItem="AcW-iN-LI5" secondAttribute="top" id="7H5-Xq-oyG"/>
                             <constraint firstItem="DIW-cJ-Tvv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.862319" id="FfI-BW-NYc"/>
                             <constraint firstItem="jBg-VS-DDn" firstAttribute="trailing" secondItem="DIW-cJ-Tvv" secondAttribute="trailing" id="Hte-II-xiq"/>
                             <constraint firstItem="DIW-cJ-Tvv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KD2-Ze-W5o"/>
                             <constraint firstItem="K0O-9E-hdw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.027" id="NOp-K6-ygI"/>
+                            <constraint firstItem="AcW-iN-LI5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RHs-em-IOI"/>
                             <constraint firstItem="8ct-yJ-jKL" firstAttribute="centerX" secondItem="DIW-cJ-Tvv" secondAttribute="centerX" id="Rcw-X3-fCf"/>
                             <constraint firstItem="DIW-cJ-Tvv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="TT4-V4-XRV"/>
                             <constraint firstItem="K0O-9E-hdw" firstAttribute="top" secondItem="Qw3-R2-bpe" secondAttribute="bottom" constant="30.000000000000057" id="b7H-R9-sQx"/>
@@ -109,8 +110,10 @@
                             <constraint firstItem="Qw3-R2-bpe" firstAttribute="trailing" secondItem="jBg-VS-DDn" secondAttribute="trailing" id="hAy-2d-ShI"/>
                             <constraint firstItem="Qw3-R2-bpe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="i0h-pf-i5d"/>
                             <constraint firstItem="jBg-VS-DDn" firstAttribute="top" secondItem="DIW-cJ-Tvv" secondAttribute="bottom" constant="40" id="iVr-OQ-aoF"/>
+                            <constraint firstItem="AcW-iN-LI5" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="jNC-zJ-gGo"/>
                             <constraint firstItem="jBg-VS-DDn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.12" id="jc6-Dr-vho"/>
                             <constraint firstItem="jBg-VS-DDn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.320451" id="trO-1l-lpm"/>
+                            <constraint firstAttribute="trailing" secondItem="AcW-iN-LI5" secondAttribute="trailing" id="wjy-EI-zYG"/>
                             <constraint firstItem="K0O-9E-hdw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="yM4-ja-iFJ"/>
                         </constraints>
                     </view>
